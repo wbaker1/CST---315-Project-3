@@ -1,0 +1,67 @@
+echo Simple Shell Script 1
+echo ___________________________________
+echo 1. ls
+
+ls
+
+echo ===================================
+echo 2. pwd
+
+pwd
+
+echo ===================================
+echo 3. df
+
+df
+
+echo ===================================
+echo 4. uname
+
+uname -a
+
+echo ===================================
+echo 5. ps
+
+ps
+
+echo ===================================
+echo 6. find
+
+find . -name *wordlist*
+
+echo ===================================
+echo 7. groups
+
+groups wesleybaker
+
+echo ===================================
+echo 8. sort on a text file
+
+sort wordlist
+
+echo ===================================
+echo 9. grep on a text file
+
+grep -i o wordlist
+
+echo ===================================
+echo 10. cat on a text file
+
+cat wordlist
+
+echo ==============================================
+echo 1. Multiple Commands: cat and grep on a text file
+
+cat wordlist | grep -i o
+
+echo ==============================================
+echo 2. Multiple Commands: cat, grep and sort on a text file
+
+cat wordlist | grep -i o | sort
+
+echo ==============================================
+echo 3. Multiple Commands: uname -a and ls
+
+uname -a ; echo ============================================== ; ls
+
+exit
